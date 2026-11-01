@@ -37,7 +37,8 @@ The target represents monthly rent in Indian rupees. The original dataset terms 
 6. Implement KNN regression from scratch using Euclidean distance.
 7. Evaluate `k` values from 1 to 30 on the validation set.
 8. Refit on the combined training and validation data using the selected `k`.
-9. Evaluate once on the untouched test set and analyze the largest errors.
+9. Evaluate the selected uniform KNN model on the held-out test set and analyze the largest errors.
+10. Compare uniform averaging with inverse-distance-weighted averaging.
 
 ## Results
 
@@ -49,8 +50,14 @@ The target represents monthly rent in Indian rupees. The original dataset terms 
 | Final KNN test MAE | 20,833 INR |
 | Improvement over baseline | 31.9% |
 | Median absolute test error | 8,362 INR |
+| Best weighted `k` | 19 |
+| Weighted KNN validation MAE | 19,539 INR |
+| Weighted KNN test MAE | 22,695 INR |
+| Weighted change vs. uniform KNN | 8.9% worse |
 
 The model improves substantially over the mean baseline, but the error analysis shows that three numerical features cannot explain the full variation in rent. Location, city, furnishing status, and area type are important candidates for future experiments.
+
+Distance weighting slightly lowers validation MAE, but it does not generalize better to the test set. Its test MAE is 8.9% higher than uniform KNN, so the original uniform-average model remains the better final model in this experiment.
 
 ## Visual results
 
