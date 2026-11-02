@@ -1,6 +1,6 @@
-# Machine Learning Course Projects
+# Machine Learning Course Projects and Lessons
 
-This repository documents the practical projects completed for the **Machine Learning** course in the **Master's Program in Computer Science**, **Decision Science and Knowledge** track, at the **University of Tehran**.
+This repository documents the practical projects and personal study notes prepared for the **Machine Learning** course in the **Master's Program in Computer Science**, **Decision Science and Knowledge** track, at the **University of Tehran**.
 
 ## Course information
 
@@ -22,6 +22,12 @@ Dr. Saman Haratizadeh is a faculty member at the University of Tehran. His resea
 |---:|---|---|---|
 | 01 | [House Rent Prediction with KNN](./01-house-rent-knn/) | Data splitting, feature scaling, KNN regression, hyperparameter tuning, test evaluation | Complete |
 
+## Lessons
+
+| Session | Notes | Main topics |
+|---:|---|---|
+| 02 | [Model Evaluation and Decision Trees](./lessons/02-model-evaluation-and-decision-trees/) | K-fold CV, confusion matrix, Precision, Recall, F1, MCC, KNN vs. trees, Entropy, Gini |
+
 ## Repository approach
 
 Each course project is stored in its own numbered folder and includes:
@@ -34,6 +40,8 @@ Each course project is stored in its own numbered folder and includes:
 - observations, limitations, and possible improvements.
 
 The notebooks emphasize understanding the algorithms. When appropriate, core methods are implemented from scratch instead of being hidden behind a ready-made estimator.
+
+The `lessons` directory contains concise, exam-ready notes organized by class session. These notes record my understanding of the concepts, formulas, interpretations, and important caveats discussed in class.
 
 ## Author
 
